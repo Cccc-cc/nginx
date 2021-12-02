@@ -17,7 +17,7 @@ spec:
       spec:
        containers:
        - name: nginx
-         image: 172.16.207.182:5000/nginx:v6
+         image: 10.0.0.35:5000/nginx:v2
 ---
 apiVersion: v1
 kind: Service
@@ -30,5 +30,5 @@ spec:
     ports:
       - port : 443
         targetPort: 80
-        nodePort: 30099
+        nodePort: 30066
 
